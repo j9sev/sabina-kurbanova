@@ -1,58 +1,94 @@
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8; 
-            display: flex;
-            justify-content: center;
-            padding-top: 50px;
-            margin: 0;
-        }
+/* Основные стили страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+    margin: 0;
+}
 
-        .container {
-            background-color: white; 
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
-            width: 320px;
-        }
+/* Контейнер карточки */
+.container {
+    background-color: white; 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
 
-        h1 { font-size: 22px; text-align: center; color: #333; }
+h1 { 
+    font-size: 24px; 
+    text-align: center; 
+    color: #2c3e50; 
+    margin-top: 0;
+}
 
-        label {
-            display: block;
-            margin-top: 15px;
-            font-size: 14px;
-            color: #666;
-        }
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #546e7a;
+    font-weight: 600;
+}
 
-        input, select, button {
-            width: 100%;
-            padding: 12px;
-            margin-top: 5px;
-            box-sizing: border-box; 
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
+/* Общие стили для полей ввода */
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    box-sizing: border-box; 
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
 
-        button {
-            background-color: #4CAF50; 
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 20px;
-            font-size: 16px;
-        }
+input:focus, select:focus {
+    border-color: #4CAF50;
+}
 
-        button:hover { background-color: #45a049; }
+/* Стили кнопки */
+button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 24px;
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.1s;
+}
 
-        #result {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #e7f3fe; 
-            border-left: 5px solid #2196F3;
-            color: #0d47a1;
-            display: none; 
-            line-height: 1.4;
-        }
-    </style>
+button:hover { 
+    background-color: #43a047; 
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Блок результата */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e3f2fd; 
+    border-left: 5px solid #2196F3;
+    color: #0d47a1;
+    display: none; 
+    line-height: 1.5;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* Стиль для ошибок */
+.error-msg {
+    border-left-color: #f44336 !important;
+    background-color: #ffebee !important;
+    color: #b71c1c !important;
+}

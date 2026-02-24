@@ -1,22 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космический калькулятор веса</title>
+    <!-- Подключаем внешний файл стилей -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Personal Calculator</h1>
+    <div class="container">
+        <h1>Weight Calculator</h1>
+        
+        <!-- Ввод имени -->
+        <label for="nameInput">Your Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter name">
 
-<form id="calculatorForm">
-    <!-- Add input fields here -->
-</form>
+        <!-- Ввод веса -->
+        <label for="weightInput">Your Weight (kg):</label>
+        <input type="number" id="weightInput" placeholder="e.g. 70.5">
 
-<div id="output">
-    <!-- Results will be displayed here -->
-</div>
+        <!-- Выбор планеты -->
+        <label for="planetSelect">Select Planet:</label>
+        <select id="planetSelect">
+            <option value="0.16">The Moon</option>
+            <option value="0.38">Mercury</option>
+            <option value="0.91">Venus</option>
+            <option value="0.38">Mars</option>
+            <option value="2.34">Jupiter</option>
+            <option value="1.06">Saturn</option>
+            <option value="0.92">Uranus</option>
+            <option value="1.19">Neptune</option>
+            <option value="0.06">Pluto</option>
+        </select>
 
-<script src="script.js"></script>
+        <button id="calculateBtn">Calculate!</button>
+
+        <!-- Блок для вывода результата или ошибок -->
+        <div id="result"></div>
+    </div>
+
+    <!-- Подключаем внешний файл скриптов -->
+    <script src="script.js"></script>
 </body>
 </html>
