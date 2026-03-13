@@ -15,8 +15,11 @@ This calculator determines your weight on other planets based on your weight on 
 List and explain all inputs you used.
 
 | Input Name | Unit | What it Represents |
+
 | Your Name | - | User's name |
+
 | Your Weight | kg | User body weight |
+
 | Select Planet | list of planents | The planet in which users want to know their weight |
 
 Explain in words:  
